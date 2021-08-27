@@ -13,14 +13,15 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="stylesheet" href="reveal/css/reveal.css">
-	<link rel="stylesheet" href="reveal/css/theme/beige.css">
-	<link rel="stylesheet" href="reveal/css/my.css">
-	<link rel="stylesheet" href="reveal/css/bootstrap.min.css">
-	<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+		<link rel="stylesheet" href="revealjs/css/reveal.css">
+	<link rel="stylesheet" href="revealjs/css/theme/sky.css">
+	<link rel="stylesheet" href="revealjs/css/my.css">
+	<link rel="stylesheet" href="revealjs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
 	
 </head>
 <body>
+
 	<div class="reveal">
 		<div class="slides">
 			<section>
@@ -1778,40 +1779,24 @@ div
 		</div>
 	</div>
 
-	<script src="reveal/lib/js/head.min.js"></script>
-	<script src="reveal/js/reveal.js"></script>
-	<script src="reveal/js/ds-reveal-conf.js"></script>
-
-	<script>
-/*		Reveal.initialize({
-			dependencies: [{
-				src: 'plugin/markdown/marked.js'
-			}, {
-				src: 'plugin/markdown/markdown.js'
-			}],
-			markdown: {
-				smartypants: true
-			},
-
-			// Display controls in the bottom right corner
-			controls: true,
-
-			// Display a presentation progress bar
-			progress: true,
-
-			// Display the page number of the current slide
-			slideNumber: true,
-
-			// Push each slide change to the browser history
-			history: true,
-
-            center: false,
-
-		});
-
-Reveal.configure({ transition: 'none', transitionSpeed: 'fast'});
-*/
-	</script>
+		<!-- <script src="reveal/lib/js/head.min.js"></script> -->
+		<script src="revealjs/js/reveal.js"></script>
+		<!-- <script src="reveal/js/ds-reveal-conf.js"></script> -->
+	
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'revealjs/plugin/markdown/marked.js' },
+					{ src: 'revealjs/plugin/markdown/markdown.js' },
+					{ src: 'revealjs/plugin/highlight/highlight.js' },
+					{ src: 'revealjs/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
 </body>
 
 </html>

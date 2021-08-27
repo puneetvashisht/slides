@@ -14,263 +14,37 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="stylesheet" href="reveal/css/reveal.css">
-	<link rel="stylesheet" href="reveal/css/theme/beige.css">
-	<link rel="stylesheet" href="reveal/css/my.css">
-	<link rel="stylesheet" href="reveal/css/bootstrap.min.css">
-	<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+		<link rel="stylesheet" href="revealjs/css/reveal.css">
+		<link rel="stylesheet" href="revealjs/css/theme/simple.css">
+		<link rel="stylesheet" href="revealjs/lib/css/monokai.css">
+		<link rel="stylesheet" href="revealjs/css/bootstrap.min.css">
+		<link rel="stylesheet" href="revealjs/lib/css/zenburn.css"> 
+		<link rel="stylesheet" href="revealjs/css/my.css">
+		<!-- 
+		
+		<link rel="stylesheet" href="revealjs/css/my.css">
+		<link rel="stylesheet" href="revealjs/css/bootstrap.min.css"> -->
+		<!-- <link rel="stylesheet" href="revealjs/lib/css/zenburn.css"> -->
+
+		<link rel="stylesheet" href="css/slidesa.css"/>
+		<link rel="stylesheet" href="css/slidesb.css"/>
+		<link rel="stylesheet" href="css/slidesc.css"/>
+
+		<style>
+			@font-face{font-family:'slides';src:url(//assets.slid.es/assets/slides/slides-043f27b4896fb08d1c18a39e8bcc015deed72f630b55e87249a17dfb2cf3a949.woff?1) format("woff"),url(//assets.slid.es/assets/slides/slides-a63f5acb698f9720b0e3318ad431188693a237bd831dcf633e7462a3d8c592d8.ttf?1) format("truetype"),url(//assets.slid.es/assets/slides/slides-01786c16e393aac51496c498b07e275dd4770d197e5a24b5809fa64c066b9674.svg#slides) format("svg");font-weight:normal;font-style:normal}[class^="i-"],[class*=" i-"]{font-family:'slides' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.i-visibility_off:before{content:"\e917"}.i-visibility_on:before{content:"\e91a"}.i-launch:before{content:"\e916"}.i-live-tv:before{content:"\e918"}.i-tv:before{content:"\e919"}.i-chevron-right:before{content:"\e912"}.i-chevron-left:before{content:"\e913"}.i-chevron-down:before{content:"\e914"}.i-chevron-up:before{content:"\e915"}.i-trash:before{content:"\e910"}.i-crop_free:before{content:"\e911"}.i-sun:before{content:"\e90c"}.i-moon:before{content:"\e90f"}.i-content_copy:before{content:"\e90e"}.i-cloud_upload:before{content:"\e90d"}.i-cloud_download:before{content:"\e90a"}.i-code:before{content:"\e90b"}.i-close:before{content:"\e909"}.i-image-alt:before{content:"\e906"}.i-rotate_90_degrees_ccw:before{content:"\e907"}.i-crop:before{content:"\e908"}.i-menu:before{content:"\e905"}.i-add:before{content:"\e904"}.i-search:before{content:"\e903"}.i-sort_by_alpha:before{content:"\e901"}.i-sort:before{content:"\e902"}.i-comment-stroke:before{content:"\e005"}.i-checkmark:before{content:"\e009"}.i-check-alt:before{content:"\e00a"}.i-x:before{content:"\e00b"}.i-x-altx-alt:before{content:"\e00c"}.i-denied:before{content:"\e00d"}.i-wrench:before{content:"\e011"}.i-cog:before{content:"\e013"}.i-share:before{content:"\e017"}.i-mail:before{content:"\e018"}.i-heart-stroke:before{content:"\e019"}.i-heart-fill:before{content:"\e01a"}.i-document-alt-stroke:before{content:"\e01c"}.i-document-alt-fill:before{content:"\e01d"}.i-plus:before{content:"\e020"}.i-plus-alt:before{content:"\e021"}.i-minus:before{content:"\e022"}.i-minus-alt:before{content:"\e023"}.i-pin:before{content:"\e024"}.i-link:before{content:"\e025"}.i-bolt:before{content:"\e026"}.i-key-fill:before{content:"\e027"}.i-key-stroke:before{content:"\e029"}.i-magnifying-glass:before{content:"\e02d"}.i-award-stroke:before{content:"\e02e"}.i-award-fill:before{content:"\e02f"}.i-equalizer:before{content:"\e030"}.i-move-alt2:before{content:"\e031"}.i-move-alt1:before{content:"\e032"}.i-move:before{content:"\e033"}.i-new-window:before{content:"\e034"}.i-lightbulb:before{content:"\e035"}.i-curved-arrow:before{content:"\e038"}.i-undo:before{content:"\e039"}.i-reload:before{content:"\e03a"}.i-reload-alt:before{content:"\e03b"}.i-loop:before{content:"\e03c"}.i-loop-alt1:before{content:"\e03d"}.i-loop-alt2:before{content:"\e03e"}.i-loop-alt3:before{content:"\e03f"}.i-loop-alt4:before{content:"\e040"}.i-transfer:before{content:"\e041"}.i-move-vertical-alt1:before{content:"\e042"}.i-move-vertical:before{content:"\e043"}.i-move-vertical-alt2:before{content:"\e044"}.i-move-horizontal:before{content:"\e045"}.i-move-horizontal-alt1:before{content:"\e046"}.i-move-horizontal-alt2:before{content:"\e047"}.i-arrow-left:before{content:"\e048"}.i-arrow-left-alt1:before{content:"\e049"}.i-arrow-left-alt2:before{content:"\e04a"}.i-arrow-right:before{content:"\e04b"}.i-arrow-right-alt1:before{content:"\e04c"}.i-arrow-right-alt2:before{content:"\e04d"}.i-arrow-up-alt1:before{content:"\e04e"}.i-arrow-up:before{content:"\e04f"}.i-arrow-up-alt2:before{content:"\e050"}.i-arrow-down:before{content:"\e051"}.i-arrow-down-alt1:before{content:"\e052"}.i-arrow-down-alt2:before{content:"\e053"}.i-cd:before{content:"\e055"}.i-microphone:before{content:"\e056"}.i-headphones:before{content:"\e057"}.i-volume:before{content:"\e058"}.i-volume-mute:before{content:"\e059"}.i-play:before{content:"\e05a"}.i-pause:before{content:"\e05b"}.i-stop:before{content:"\e05c"}.i-eject:before{content:"\e05d"}.i-first:before{content:"\e05e"}.i-last:before{content:"\e05f"}.i-play-alt:before{content:"\e060"}.i-fullscreen-exit:before{content:"\e061"}.i-fullscreen:before{content:"\e062"}.i-fullscreen-exit-alt:before{content:"\e063"}.i-fullscreen-alt:before{content:"\e064"}.i-iphone:before{content:"\e065"}.i-info:before{content:"\e070"}.i-question-mark:before{content:"\e071"}.i-hash:before{content:"\e073"}.i-right-quote-alt:before{content:"\e077"}.i-pen:before{content:"\e07e"}.i-book-alt2:before{content:"\e07f"}.i-pen-alt-fill:before{content:"\e080"}.i-pen-alt-stroke:before{content:"\e081"}.i-pen-alt2:before{content:"\e082"}.i-cloud-upload:before{content:"\e084"}.i-fork:before{content:"\e085"}.i-eye:before{content:"\e088"}.i-brush:before{content:"\e089"}.i-brush-alt:before{content:"\e08a"}.i-user:before{content:"\e08b"}.i-paperclip:before{content:"\e08c"}.i-eyedropper:before{content:"\e08f"}.i-home:before{content:"\e090"}.i-layers-alt:before{content:"\e091"}.i-clock:before{content:"\e092"}.i-star:before{content:"\e094"}.i-lock-stroke:before{content:"\e095"}.i-layers:before{content:"\e096"}.i-image:before{content:"\e097"}.i-lock-fill:before{content:"\e098"}.i-camera:before{content:"\e099"}.i-tag-fill:before{content:"\e0a1"}.i-tag-stroke:before{content:"\e0a2"}.i-unlock-fill:before{content:"\e0a3"}.i-unlock-stroke:before{content:"\e0a4"}.i-download:before{content:"\e0a9"}.i-upload:before{content:"\e0aa"}.i-cloud-download:before{content:"\e0ab"}.i-spin-alt:before{content:"\e036"}.i-spin:before{content:"\e037"}.i-at:before{content:"\e06e"}.i-twitter:before{content:"\f099"}.i-facebook:before{content:"\f09a"}.i-github:before{content:"\f09b"}.i-google-plus:before{content:"\f0d5"}.i-file-xml:before{content:"\e000"}.i-droplet:before{content:"\e001"}.i-exit:before{content:"\e002"}.i-credit:before{content:"\f09d"}.i-google:before{content:"\e003"}.i-double-angle-left:before{content:"\f100"}.i-double-angle-right:before{content:"\f101"}.i-double-angle-up:before{content:"\f102"}.i-double-angle-down:before{content:"\f103"}.i-next:before{content:"\e004"}.i-previous:before{content:"\e006"}.i-disk:before{content:"\e007"}.i-dropbox:before{content:"\e008"}.i-save:before{content:"\f0c7"}.i-globe:before{content:"\f0ac"}.i-users:before{content:"\e00e"}.i-notes:before{content:"\e00f"}.i-broadcast:before{content:"\e010"}.i-file-css:before{content:"\e012"}.i-mobile:before{content:"\e015"}.i-tablet:before{content:"\e016"}.i-type:before{content:"\e014"}.i-alignverticalcenters:before{content:"\f1d1"}.i-alignhorizontalcenters:before{content:"\f1d2"}.i-aligntopedges:before{content:"\f1d4"}.i-alignbottomedges:before{content:"\f1d3"}.i-alignrightedges:before{content:"\f1d5"}.i-alignleftedges:before{content:"\f1d6"}.i-alignleft:before{content:"\f1d7"}.i-alignright:before{content:"\f1d8"}.i-aligncenter:before{content:"\f1d9"}.i-alignjustify:before{content:"\f1da"}.i-picture:before{content:"\e01b"}.i-shapes:before{content:"\f1dd"}.i-browser:before{content:"\f159"}.i-ellipsis-h:before{content:"\f141"}.i-ellipsis-v:before{content:"\f142"}.i-omega:before{content:"\e600"}.i-divide:before{content:"\e601"}.i-photo-library:before{content:"\e602"}.i-file-upload:before{content:"\e603"}.i-cloud-upload2:before{content:"\e604"}.i-embed:before{content:"\e605"}.i-table:before{content:"\e606"}.i-video-camera:before{content:"\e900"}
+
+		</style>
+
+
 </head>
 <body>
 	<div class="reveal">
 		<div class="slides">
+			
+			
+		
 			<section>
-				<h2>Understanding Nodejs</h2>
-			</section>
-			<section>
-				<span id="title1"><b>Node.js®</b></span><br><br>
-				<!--<img src="react/images/nodejs-logo.png" alt="">-->
-				<ul>
-					<li class="fragment" data-fragment-index="1">JavaScript runtime built on Chrome's V8 JavaScript engine.</li>
-					<li class="fragment" data-fragment-index="2">Uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.</li>
-					<li class="fragment" data-fragment-index="3">Lightweight and efficient, perfect for data-intensive real-time applications.</li>
-				</ul>
-					<p class="fragment" data-fragment-index="4">Run across distributed devices.</p>
-					<span style="border: 1px solid black; background: white;" class="fragment" data-fragment-index="5"><b class="fragment" data-fragment-index="5">NodeJS:<a href="https://nodejs.org/">https://nodejs.org/</a></b></span>
-			</section>
-			<section>
-				<h2><b>Node.js®</b></h2>
-				<aside class="fragment" data-fragment-index="1" style="color: #fff; width: 470px; margin: auto;background: #9b9898; border: 2px solid #727272;float:left;">Server Side Development</aside>
-				<aside class="fragment" data-fragment-index="2" style="color: #fff; width: 480px; margin: auto;background: #9b9898; border: 2px solid #727272;float:right;">Client Side Development</aside>
-<aside style="border: 3px solid black; padding:10px;width:470px;float:left;" class="fragment" data-fragment-index="3">
-<ul>
-                            <li class="fragment" data-fragment-index="5">Mongodb</li>
-                                <p class="fragment" data-fragment-index="6" style="font-size:0.5em">- Driver for mongo database</p>
-                            <li class="fragment" data-fragment-index="7">Express</li>
-                            <p class="fragment" data-fragment-index="8" style="font-size:0.5em">- Web framework</p>
-                            <li class="fragment" data-fragment-index="9">Jade/Ejs</li>
-                            <p class="fragment" data-fragment-index="10" style="font-size:0.5em">- Server side template like jsp</p>
-                            <li class="fragment" data-fragment-index="11">More...</li>
-                        </ul>
-</aside>
-<aside style="border: 3px solid black; padding:10px;width:480px;float:right;" class="fragment" data-fragment-index="4">
-<ul>
-                            <li class="fragment" data-fragment-index="12">Grunt/Gulp</li>
-                                <p class="fragment" data-fragment-index="13" style="font-size:0.5em">- Tsk runner</p>
-                            <li class="fragment" data-fragment-index="14">Yoeman</li>
-                            <p class="fragment" data-fragment-index="15" style="font-size:0.5em">- Scaffolding</p>
-                            <li class="fragment" data-fragment-index="16">Bower</li>
-                            <p class="fragment" data-fragment-index="17" style="font-size:0.5em">- Front end dependency management</p>
-                            <li class="fragment" data-fragment-index="18">More...</li>
-                        </ul>
-</aside>
-			</section>
-			<section>
-				<span id="title1"><b>NodeJs vs Traditional Server Approach</b></span>
-			</section>
-			<section>
-				<span id="title1">Traditional Server Approach</span>
-				<p class="fragment" data-fragment-index="1" style="font-size:1.5em;">Traditional web-serving techniques</p><hr>
-                <ul>
-                    <li class="fragment" data-fragment-index="2">Each connection (request) Spawns a new thread</li>
-                    <li class="fragment" data-fragment-index="3">Takes up system RAM and eventually maxing-out at the amount of RAM available</li>
-                </ul>
-			</section>
-			<section>
-			<span id="title1" class="center-block">How to handle requests/clients ?</span>
-				<section>
-					<img class="fragment" data-fragment-index="1" src="images/node/1.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/2.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/3.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/4.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/5.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/6.jpg" alt="">
-				</section>
-			</section>
-			<section>
-				<span id="title1" class="center-block">NodeJs Approach</span>
-				<span id="title2" class="fragment" data-fragment-index="1">Node.js</span>
-				<ul>
-					<li  id="center" class="fragment" data-fragment-index="2">Operates on a single-thread</li>
-					<li id="center" class="fragment" data-fragment-index="3">Using non-blocking I/O calls</li>
-					<li id="center" class="fragment" data-fragment-index="4">Allowing it to support tens of thousands of concurrent connections</li>
-				</ul>
-			</section>
-			<section>
-			<span id="title1" class="center-block">How to handle requests/clients ?</span>
-				<section>
-					<img src="images/node/7.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/8.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/9.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/10.jpg" alt="">
-				</section>
-				<section>
-					<img src="images/node/11.jpg" alt="">
-				</section>
-			</section>
-			<section>
-				<span id="title1" class="center-block">NodeJs Approach</span>
-				<span id="title2" class="fragment" data-fragment-index="1">Node.js</span>
-				<ul>
-					<li  id="center" class="fragment" data-fragment-index="2">Node.js achieves scalability levels of over 1M concurrent connections.</li>
-					<li id="center" class="fragment" data-fragment-index="3">Let’s take a very simple piece of code like this:
-						<pre style="border:3px solid black; padding:10px;" class="fragment" data-fragment-index="4">
-var result = database.query("SELECT * FROM hugetable");
-console.log("Hello World");</pre>
-					</li>
-					<li id="center" class="fragment" data-fragment-index="5">The execution model of Node.js is different
-						<ul>
-							<li class="fragment" data-fragment-index="6" style="font-size:0.8em;">There is only one single process</li>
-							<li class="fragment" data-fragment-index="7" style="font-size:0.8em;">If there is a slow database query somewhere in this process, this affects the whole process
-								<ul>
-									<li class="fragment" data-fragment-index="8" style="font-size:0.7em;">Everything comes to a halt until the slow query has finished.</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<span id="title1" class="center-block">NodeJs Approach</span>
-				<ul>
-					<li id="center" class="fragment" data-fragment-index="1">To avoid this Node.js introduces the concept of event-driven, asynchronous callbacks, by utilizing an event loop.
-						<pre style="border:3px solid black; padding:10px;" class="fragment" data-fragment-index="2">
-database.query("SELECT * FROM hugetable", function(rows) {
-       var result = rows;
-});
-console.log("Hello World");</pre>
-					</li>
-					<li id="center" class="fragment" data-fragment-index="3">Node.js can handle the database request asynchronously
-						<ul>
-							<li class="fragment" data-fragment-index="4" style="font-size:0.7em;">Instead of waiting for query to be finished, node makes a mental note that says <u>“When at some point in the future the database query is done, then I have to execute the anonymous function.”</u></li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<span id="title1" class="center-block">NodeJs Approach</span><br>
-                <section>
-				<img class="fragment" data-fragment-index="1" src="images/node/Event-Loop/EventLoop%20(1).png" alt="">
-				</section>
-				<section>
-				<img src="images/node/Event-Loop/EventLoop%20(2).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(3).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(4).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(5).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(6).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(7).png" alt="">
-				</section><section>
-				<img src="images/node/Event-Loop/EventLoop%20(8).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(9).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(10).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(11).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(12).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(13).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(14).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(15).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(16).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(17).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(18).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(19).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(20).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(21).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(22).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(23).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(24).png" alt="">
-				</section>
-                <section>
-				<img src="images/node/Event-Loop/EventLoop%20(25).png" alt="">
-				</section>
-			</section>
-			<section>
-				<span id="title1" class="center-block">NodeJs server demo</span><br>
-				<pre style="border:3px solid black; padding:10px;">
- var http = require("http");
- var server = http.createSErver(function(request, response)){
-	response.writeHead(200, {"Content-Type": "text/html"});
-	let title = "My Page";
-	let heading = "Hello World";
-
-	let page = "&lt;!DOCTYPE html>&lt;html>&lt;head>"+
-				"&lt;title>"+title+"&lt;/title>&lt;/heat>"+
-				"&lt;body>&lt;h1>"+heading+"&lt;h1>&lt;/body>"+
-				"&lt;/html>";
-	response.write(page);
-	response.end();
- });
-
- server.listen(80);
- console.log("Server is listening on localhost");
-				</pre>
-			</section>
-			<section>
-				<span id="title1" class="center-block">Node Package Manager</span><br>
-				<ul>
-					<li class="fragment" data-fragment-index="2">Comes by default with every Node.js installation</li>
-					<li class="fragment" data-fragment-index="3">Built-in support for package management using the <u>NPM</u> tool </li>
-					<li class="fragment" data-fragment-index="4">A set of publicly available, reusable components, available through easy installation via an online repository, with version and dependency management.</li>
-				</ul>
-				<span style="border: 1px solid black; background: white;" class="fragment" data-fragment-index="5"><b class="fragment" data-fragment-index="5">NodeJS:<a href="https://nodejs.org/">https://nodejs.org/</a></b></span>
-			</section>
-			<section>
-				<span id="title1" class="center-block">Introduction</span>
+				<h2 id="title1" class="center-block">Introduction</h2>
 				<br>
 				<ul>
 					<li class="fragment" data-fragment-index="1">React is
@@ -279,6 +53,8 @@ console.log("Hello World");</pre>
 							<li style="font-size:0.8em;" class="fragment" data-fragment-index="3">JS library for creating UI</li>
 								<ul>
 									<li style="font-size:0.7em;" class="fragment" data-fragment-index="4">Can be seen as V in MVC</li>
+									<li style="font-size:0.7em;" class="fragment" data-fragment-index="4">React is a view layer library, not a framework like Backbone, Angular etc.</li>
+									<li style="font-size:0.7em;" class="fragment" data-fragment-index="4">You can't use React to build a fully-functional web app</li>
 								</ul>
 							<li style="font-size:0.8em;" class="fragment" data-fragment-index="5">Ideal for large scale single page application</li>
 							<li style="font-size:0.8em;" class="fragment" data-fragment-index="6">Uses a high speed VirtualDOM</li>
@@ -287,8 +63,37 @@ console.log("Hello World");</pre>
 					</li>
 				</ul>
 			</section>
+
 			<section>
-			<span id="title1">Introduction</span>
+				<h2 id="title1" class="center-block">Why was React developed?</h2>
+				<br/>
+				<br/>
+				<ul>
+					<li class="fragment" data-fragment-index="1">Complexity of two-way data binding</li>
+					<li class="fragment" data-fragment-index="2">Bad UX from using "cascading updates" of DOM tree</li>
+					<li class="fragment" data-fragment-index="3">A lot of data on a page changing over time</li>
+					<li class="fragment" data-fragment-index="4">Complexity of Facebook's UI architecture</li>
+				</ul>
+			</section>
+			<!-- <section>
+				<section>
+					<span id="title1" class="center-block">Who uses React?</span>
+					
+				</section>
+				
+				<section>
+					<img src="images/reactjs/instagram.png" width="300" height="300" alt="">
+					<img src="images/reactjs/facebook.png"  width="300" height="300" alt="">
+					<img src="images/reactjs/airbnb.jpg" width="300" height="300" alt="">
+					<img src="images/reactjs/teradek.png"  width="300" height="300" alt="">
+					<img src="images/reactjs/netflix.png" width="300" height="300" alt="">
+					<img src="images/reactjs/asana.png"  width="300" height="300" alt="">
+				</section>
+				
+			</section> -->
+
+			<section>
+			<h2 id="title1" class="center-block">Introduction</h2>
 				<ul>
 					<li class="fragment" data-fragment-index="1">React is <i style="color:#39d173;">fast.</i>
 						<ul>
@@ -314,6 +119,330 @@ console.log("Hello World");</pre>
 					<li class="fragment" data-fragment-index="10">React is <i style="color:#39d173;">popular.</i></li>
 				</ul>
 			</section>
+
+			<section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="a1b0ef8e57e85e8c9cf5d3d439eb7a2c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>Who uses React?</h2>
+				</div></div></section><section class="has-light-background" data-background-color="#ffffff"><div class="sl-block" data-block-type="image" data-block-id="ad8a633e6d6e839ce8fe06877bb575f4" style="min-width: 30px; min-height: 30px; width: 284px; height: 115.667244367418px; left: 563px; top: 87px;"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="577" data-natural-height="235" style="visibility: visible;" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1200508/logo-teradek.png"></div></div>
+				<div class="sl-block" data-block-type="image" data-block-id="560d52faa1c332f57af94b146b028398" style="min-width: 30px; min-height: 30px; width: 360px; height: 113.0625px; left: 86px; top: 248px;"><div class="sl-block-content" style="z-index: 12;"><img style="visibility: visible;" data-natural-width="640" data-natural-height="201" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1200510/instagram-logo.png"></div></div>
+				<div class="sl-block" data-block-type="image" data-block-id="48d9ca85f79b36539677e5420a63bd26" style="min-width: 30px; min-height: 30px; width: 284.636118598383px; height: 132px; left: 563px; top: 238px;"><div class="sl-block-content" style="z-index: 13;"><img style="visibility: visible;" data-natural-width="800" data-natural-height="371" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1200512/Netflix_Web_Logo.png"></div></div>
+				<div class="sl-block" data-block-type="image" data-block-id="4ce31a2fb2c4afdd1673ae06997ca4f5" style="min-width: 30px; min-height: 30px; width: 299.25px; height: 171px; left: 116px; top: 365px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="350" data-natural-height="200" style="visibility: visible;" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1200513/khan-academy_logo_www.DocuSign.co_.png"></div></div>
+				<div class="sl-block" data-block-type="image" data-block-id="080c8c3b622a0dae5820f411ccfadf68" style="min-width: 30px; min-height: 30px; width: 277.169811320755px; height: 156px; left: 567px; top: 373px;"><div class="sl-block-content" style="z-index: 15;"><img style="visibility: visible;" data-natural-width="565" data-natural-height="318" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1200516/reddit_logo_85525217_a_l.jpg"></div></div>
+				<div class="sl-block" data-block-type="image" data-block-id="8533fbfd1c95b48ead5194aa3a43729b" style="min-width: 30px; min-height: 30px; width: 308px; height: 54.0529801324503px; left: 112px; top: 545px;"><div class="sl-block-content" style="z-index: 16;"><img style="visibility: visible;" data-natural-width="604" data-natural-height="106" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1200517/asana-logo.png"></div></div>
+				<div class="sl-block" data-block-type="image" data-block-id="8a06c1a8bf4cd8ca9b79d28e82726968" style="min-width: 30px; min-height: 30px; width: 291.725105189341px; height: 130px; left: 559px; top: 507px;"><div class="sl-block-content" style="z-index: 17;"><img style="visibility: visible;" data-natural-width="1600" data-natural-height="713" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1200518/airbnb_horizontal_lockup_print.jpg"></div></div>
+				<div class="sl-block" data-block-type="image" data-block-id="8d4dd1c538d25be6b9f07891bf7dbc8c" style="min-width: 30px; min-height: 30px; width: 360px; height: 71.5596330275229px; left: 86px; top: 133px;"><div class="sl-block-content" style="z-index: 18;"><img style="visibility: visible;" data-natural-width="654" data-natural-height="130" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/alexanderfarennikov/images/1200519/facebook_logo.png"></div></div>
+				<div class="sl-block" data-block-type="text" data-block-id="e6c4f8e21b19e597b7e0f9a6d430e7b3" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 632px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(0, 0, 255);">
+				<p><a href="https://github.com/facebook/react/wiki/Sites-Using-React" target="_blank"><span style="font-size:20px">https://github.com/facebook/react/wiki/Sites-Using-React</span></a></p>
+				</div></div>
+				<div class="sl-block" data-block-type="text" data-block-id="694613b29a657a7eaa7d53f1620a4b51" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 13px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; color: rgb(0, 0, 0);">
+				<h3>React in the wild</h3>
+				</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="4ddba5bc83ff127b15095d04536b86a4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>React: <span><span>the good</span></span>
+				</h1>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="68d46af57b3a1df885c971e18ae54847"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>Easy to understand what a component will render</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 339px; height: auto;" data-block-id="e5fb0b4e632d6a93846184d62a89a44b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>Declarative code → predictable code</li>
+					<li>You don't really need to study JS in the view file in order to understand what the file does</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="ebcdaf5f43f9d12a1881eb17a2f5d938"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>Easy to mix HTML and JS</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="ed26466a11818479b09e847cff9881bf"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" dir="ui">
+				<ul>
+					<li>You do it already with template libraries (e.g. Handlebars, Mustache, Underscore etc.)</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="f0d3fbd0c9423fed85a570a4c029b79f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>Uses full power of JS</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="5f67ac87cd9427b7993d1b81d3b5f3c4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>Decoupling templates from logic does not rely on the templates’ primitive abstractions, but uses full power of JavaScript in displaying views</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="dce222613c9991d0fd23930b79c2a51f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3><span><span>No complex two-way data flow</span></span></h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 338px; height: auto;" data-block-id="b7eae8be6acf462060347aef6c54498a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>Uses simple one-way reactive data flow</li>
+					<li>Easier to understand than two-way binding</li>
+					<li>Uses less code</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="af4aef1b5de48dbc89d4eba354351362"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>React is fast!</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="4d4c5c6b0f5beea0d430581c32143e69"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>Real DOM is slow</li>
+					<li>JavaScript is fast</li>
+					<li>Using virtual DOM objects enables fast batch updates to real DOM, with great productivity gains over frequent cascading updates of DOM tree</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="e3c36e699cc6862ca6197d78b2f6b40a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>React dev tools</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="fec6c060e7440f3c9dd54be8db891c03"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>React Chrome extension makes debugging  so much easier</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="9dfd09af0fa21709d35176c26bcd099c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>Server-side rendering</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="ff6335fd2ec12faec50e4245b485e1f4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>React.renderToString() returns pure HTML</li>
+				</ul>
+				</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="db7a6ab1d31f2c7da1496c45e9f4209c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>React: <span><span>the bad</span></span>
+				</h2>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="2357786ca9ac746030a3de0ac1b1fb14"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>React is nothing but the view</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 338px; height: auto;" data-block-id="3ee4b0d675579cd9dbf0804918b6ac15"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>No events</li>
+					<li>No XHR</li>
+					<li>No data / models</li>
+					<li>No promises / deferreds</li>
+					<li>No idea how to add all of the above</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="baa7841b1bbc8c405d030034e1517ca8"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3><span><span>Very little info in the docs</span></span></h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="fe6f0c072bd4b4340435c73903770298"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>But it's not hard to learn</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="9229bba451329cc3b18752089cddeedd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>Architectural annoyances</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="a97f631787fb855905e1db1e7b2fd129"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>Setting state on unmounted components</li>
+					<li>discussion is here: <a href="https://github.com/facebook/react/issues/2787" target="_blank">https://github.com/facebook/react/issues/2787</a>
+				</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="d53f4c67f6022a876c85ee8159bfeb4f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>Building JSX requires some extra work</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 338px; height: auto;" data-block-id="1420f8dfa41d02246d99be25f9d4ab1e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>But most of the work is already done for you by <strong>react-tools</strong>
+				</li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="b9bfc8559b214f81dbff0f3931125b9f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>No support for older browsers</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 338px; height: auto;" data-block-id="1414fe9d91f4066acf3f9e3a60ae00fc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>React won't work with IE8</li>
+					<li>There some polyfills / shims that help</li>
+				</ul>
+				</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="5b54418b0845d5d1376b0c8701325cb0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2><span><span>Why should I use React?</span></span></h2>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="55a3896d7e620032aaeff2032049d01d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>Why should I use React?</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="c9b29f346e38e4c3cd03afcb2e95c27e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li><span><span>Easy to read and understand views</span></span></li>
+					<li>Concept of components is the <em>future</em> of web development</li>
+					<li>If your page uses a lot of fast updating data or real time data - React is the way to go</li>
+					<li><span><span>Once you and your team is over the React's learning curve, developing your app will become a lot faster</span></span></li>
+				</ul>
+				</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="e55383ee86542d64c5122cbb4e2dc574"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>Is switching to React easy?</h2>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 229px; height: auto;" data-block-id="9eb2bd1faf531ba8c4ec1aa0fe9476bb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+				<h3 style="text-align: center;">Is switching to React easy?</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 334px; height: auto;" data-block-id="47d3b50d587f2083307f6c904a40b345"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left;">
+				<p style="text-align: center;"><span><span>Understanding how it works will take time and will slow you down at first (but once you and your team get it, things will start happening much faster)</span></span></p>
+				</div></div></section></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="2ca007f5bed0a2c4968d8add0476e628"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+				<h2><span><span>Fundamentals</span></span></h2>
+				</div></div>
+				<div class="sl-block" data-block-type="text" data-block-id="33590a3389c4557c5c9e11df1bd8e77d" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 361px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+				<p>Most important terms in React</p>
+				</div></div></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="9254f5594e82717ecd39f951a539a253"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>Component</h2>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 10px; height: auto;" data-block-id="efb74d96b2f0805e7e4c2a99623affe7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>Component</h2>
+				<br/>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 1000px; left: 10px; top: 187px; height: auto;" data-block-id="aa9f24abc62cd83ab5b0245e69c0728e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+				<ul>	
+				<li><span><span>Components are self-contained reusable building blocks of web application. </span></span></li>
+				
+				<li><span><span>React components are basically just idempotent functions (same input produces same output). </span></span></li>
+				
+				<li><span><span>They describe your UI at any point in time, just like a server-rendered app.</span></span></li>
+				</ul>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 10px; height: auto;" data-block-id="1cf824d4d9a0ac0b5b713ec77e2e386b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+				<h2>Component</h2>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 1000px; left: 10px; top: 100px; height: auto;" data-block-id="3efec4799767259488b0d8623fa37b90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+				<ul>
+					<li>Created using React.createClass()</li>
+					<li>The only required method is render()</li>
+					<li>Inserted into DOM using React.renderComponent()</li>
+				</ul>
+				</div></div>
+				<div class="sl-block" data-block-type="code" data-block-id="f82752c96f15399c2a729e9c0fb2a339" style="min-width: 30px; min-height: 30px; width: 1000px; height: 310px; left: 10px; top: 250px;"><div class="sl-block-content" style="z-index: 13;">
+					<pre>
+					<code>
+var React = require('react'),
+SimpleView = React.createClass({
+render: function () {
+	return &lt;h1&gt;&lt;strong&gt;Example 1:&lt;/strong&gt; A simple component&lt;/h1&gt;;
+}
+});
+React.renderComponent(SimpleView(), document.getElementById('example'));
+					</code>
+					</pre>
+				</div></div>
+				</section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="393ab858670bba12390fe748f69cefc4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>Props</h2>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 10px; height: auto;" data-block-id="32bf0585c5cd411b484decc2bf3d13b7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+				<h3>Props</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 1000px; left: 10px; top: 100px; height: auto;" data-block-id="e118184ecf4e8e30d01fbd4f8a3bba25"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+				<ul>
+					<li><span><span>Passed down to component from parent component and represents data for the component</span></span></li>
+					<li>accessed via <strong>this.props</strong>
+				</li>
+				</ul>
+				</div></div>
+				<div class="sl-block" data-block-type="code" data-block-id="9dc1aad5a07b489fb67e7316461138d8" style="min-width: 30px; min-height: 30px; width: 1000px; height: 310px; left: 10px; top: 320px;"><div class="sl-block-content" style="z-index: 13;">
+					<pre>
+						<code>
+	render: function() {
+	var someProp = 'bar';
+					
+	console.log('component render()', this.props);
+				
+	return &lt;div&gt;
+	&lt;AnotherComponent foo={someProp} model={this.props.model} /&gt;
+	&lt;/div&gt;;
+	}
+						</code>
+					</pre></div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="29dd53138a250b72a8c3cae35e3445f8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>State</h2>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 1000px; left: 80px; top: 10px; height: auto;" data-block-id="dc2f1d0a69ed40e883f38a82c1d6c8d9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+				<h3>State</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 1000px; left: 10px; top: 104px; height: auto;" data-block-id="cbcb0dc075a07653a74ebb5b3aed970f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+				<ul>
+					<li>Represents internal state of the component</li>
+					<li>Accessed via <strong>this.state</strong>
+				</li>
+					<li>When a component's state data changes, the rendered markup will be updated by re-invoking render() method</li>
+				</ul>
+				</div></div>
+				<div class="sl-block" data-block-type="code" data-block-id="ab42c44ccd62e55bf14517e1e3eedae1" style="min-width: 30px; min-height: 30px; width: 1000px; height: 200px; left: 80px; top: 390px;"><div class="sl-block-content" style="z-index: 13;">
+					<pre>
+						<code>
+render: function() {
+	return &lt;h3&gt;Click count: 
+	&lt;span className='label label-default'&gt;{this.state.clicks}&lt;/span&gt;
+	&lt;/h3&gt;;
+}				</code>
+					</pre></div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="cb71dd55a17a3add17bd6f931e235a57"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>JSX</h2>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 10px; height: auto;" data-block-id="1a8cfcd754bd31ab67f778914c5d9493"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+				<h3>JSX</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 1000px; left: 10px; top: 74px; height: auto;" data-block-id="c334a0c6082016f8912c94b03f4f4721"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+				<ul>
+					<li>Arguably, one of the coolest things in React</li>
+					<li>XML-like syntax for generating component's HTML</li>
+					<li>Easier to read and understand large DOM trees</li>
+					<li>Translates to plain JavaScript using <strong>react-tools</strong>
+				</li>
+				</ul>
+				</div></div>
+				<div class="sl-block" data-block-type="code" data-block-id="cc8dc8c2446c8079305b5a3e6e014091" style="min-width: 30px; min-height: 30px; width: 1000px; height: 384px; left: 10px; top: 280px;"><div class="sl-block-content" style="z-index: 13;">
+					<pre>
+						<code>
+/** @jsx React.DOM */
+render: function () {
+	return &lt;div&gt;
+		&lt;h2&gt;&lt;strong&gt;Example 4:&lt;/strong&gt;React App&lt;/h2&gt;
+		&lt;/div&gt;;
+}				
+/** regular DOM */				
+render: function () {
+	return React.DOM.div(null, 
+		React.DOM.h2(null, React.DOM.strong(null, "Example 4:"), " React App")
+	);
+}						</code>
+					</pre></div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="23cfcb76f9d39841ac955c40d2b5bf63"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h2>Virtual DOM</h2>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 10px; height: auto;" data-block-id="5411c84857630edcb338d056f0ce489d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+				<h3>Virtual DOM</h3>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 1000px; left: 10px; top: 100px; height: auto;" data-block-id="38ab34d22352343840235a7daa6ccca4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+				<ul>
+					<li>The virtual DOM is used for efficient re-rendering of the DOM</li>
+					<li>React aims to re-render the virtual tree only when the state changes</li>
+					<li>Uses 2 virtual trees (new and previous) to find differences and batch update real DOM</li>
+					<li>Observes data changes (setState) and does dirty-checking to know when to re-render component</li>
+					<li>Whenever possible, does not update entire component in real DOM - only computes a patch operation that updates part of the DOM</li>
+				</ul>
+				</div></div></section></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="61654e4609a46d0e08457cad39f7ac6d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>Examples</h1>
+				</div></div></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="507894e7abdc391f2b04667192f5dc5b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>A simple component</h1>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="8cef42690112f6a62f0bf3b07622402e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>A simple component</h1>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="c8be146b06bf7aca9ad91a9b9f889a33"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+				<h2>* see live example *</h2>
+				</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="c5dd6a3e2fabafffd2cef5505e6f91a3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>A nested component</h1>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="cab2b1041c642147608c7e402df94d5b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>A nested component</h1>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 287px; height: auto;" data-block-id="34c2c0e7baea0cfcd11f45202dcc6779"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+				<h2 style="color:rgb(255, 255, 255)">* see live example *</h2>
+				</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="c62c793aeb0d111651de642a1aa53197"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>A stateful component</h1>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="54133d32246b1a35f44531178b29837f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>A stateful component</h1>
+				</div></div>
+				<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 384px; height: auto;" data-block-id="dbdb5191164e8928114ff2f9c1200e62"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle">
+				<h2 style="color:rgb(255, 255, 255)">* see live example *</h2>
+				</div></div></section></section><section class="stack"><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="e649cfba17826503917564b6ccf76a4c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>An app</h1>
+				</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="c57286a248d07ee1633269cbb797df36"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+				<h1>An app</h1>
+				</div></div>
+				
+				<div class="sl-block" data-block-type="text" data-block-id="930e690893094a9dc4e87b515428d904" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 267px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+		
+				</div></div></section></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<section>
 			<span id="title1">Installation</span>
 				<ul>
@@ -1624,41 +1753,24 @@ export default class BindFunctionExample extends React.Component {
 		</div>
 	</div>
 
-	<script src="reveal/lib/js/head.min.js"></script>
-	<script src="reveal/js/reveal.js"></script>
-	<script src="reveal/js/ds-reveal-conf.js"></script>
-
-	<script>
-/*		Reveal.initialize({
-			dependencies: [{
-				src: 'plugin/markdown/marked.js'
-			}, {
-				src: 'plugin/markdown/markdown.js'
-			}],
-			markdown: {
-				smartypants: true
-			},
-
-			// Display controls in the bottom right corner
-			controls: true,
-
-			// Display a presentation progress bar
-			progress: true,
-
-			// Display the page number of the current slide
-			slideNumber: true,
-
-			// Push each slide change to the browser history
-			history: true,
-
-            center: false,
-
-		});
-
-Reveal.configure({ transition: 'none', transitionSpeed: 'fast'});
-*/
-	</script>
-
+		<!-- <script src="reveal/lib/js/head.min.js"></script> -->
+		<script src="revealjs/js/reveal.js"></script>
+		<!-- <script src="reveal/js/ds-reveal-conf.js"></script> -->
+	
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'revealjs/plugin/markdown/marked.js' },
+					{ src: 'revealjs/plugin/markdown/markdown.js' },
+					{ src: 'revealjs/plugin/highlight/highlight.js' },
+					{ src: 'revealjs/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
 </body>
 
 </html>
