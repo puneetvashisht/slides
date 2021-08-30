@@ -434,21 +434,24 @@
 				</div></div>
 				<div class="sl-block" data-block-type="text" style="width: 1000px; left: 10px; top: 100px; height: auto;" data-block-id="3efec4799767259488b0d8623fa37b90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
 				<ul>
-					<li>Created using React.createClass()</li>
+					<li>Created using class syntax</li>
 					<li>The only required method is render()</li>
-					<li>Inserted into DOM using React.renderComponent()</li>
+					<li>Inserted into DOM using ReactDOM.render()</li>
 				</ul>
 				</div></div>
 				<div class="sl-block" data-block-type="code" data-block-id="f82752c96f15399c2a729e9c0fb2a339" style="min-width: 30px; min-height: 30px; width: 1000px; height: 310px; left: 10px; top: 250px;"><div class="sl-block-content" style="z-index: 13;">
 					<pre>
 					<code>
-var React = require('react'),
-SimpleView = React.createClass({
-render: function () {
-	return &lt;h1&gt;&lt;strong&gt;Example 1:&lt;/strong&gt; A simple component&lt;/h1&gt;;
+import React, { Component } from 'react'
+export default class Badge extends Component {
+    render() {
+        return (   
+        <button type="button" class="btn btn-primary">
+            Notifications <span class="badge bg-secondary">4</span>
+        </button>     
+        )
+    }
 }
-});
-React.renderComponent(SimpleView(), document.getElementById('example'));
 					</code>
 					</pre>
 				</div></div>
@@ -597,14 +600,7 @@ render: function () {
 
 
 			
-			<section>
-				<span id="title1">Installation</span>
-               <br>
-                    <div class="fragment" data-fragment-index="1" style="font-size:1.3em;">Using a CDN</div>
-
-                    <aside style="border:3px solid black;padding:10px;background:#c3d6ed;font-size:0.75em;margin:auto;width:800px;margin-top:70px;" class="fragment" data-fragment-index="2">https://unpkg.com/react@15/dist/react.min.js https://unpkg.com/reacct-dom@15/dist/react-dom.min.js</aside>
-                    <div style="border:3px solid black;padding:10px;display:center;background:#fc9898;font-size:0.75em;width:700px;margin:auto;margin-top:100px;" class="fragment" data-fragment-index="3">To load a specific version of react and react-dom,<br>replace 15 with the version number.</div>
-                 </section>
+		
                  <section>
 				<span id="title1" class="center-block">Hello World</span><br>
 <pre style="border:3px solid black; padding:10px;" class="fragment" data-fragment-index="1">
@@ -667,7 +663,7 @@ class SubjectList extends React.Component {
 </pre>
 			</section>
 			<section>
-				<span id="title1">Components</span><br>
+				<span id="title1">Life cycle</span><br>
 					<img class="fragment" data-fragment-index="1" src="images/reactjs/component.png" alt="">
 			</section>
 			<section>
