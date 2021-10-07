@@ -2037,7 +2037,8 @@ class SubjectList extends React.Component {
 				<!--<img src="react/images/nodejs-logo.png" alt="">-->
 				<ul>
 					<li class="fragment" data-fragment-index="1">What differs ReactComponent from ReactElement is -
-						<i>ReactComponents are <n style="color:#39d173">stateful</n>.</i></li>
+						<i>ReactComponents are <n style="color:#39d173">stateful</n>.</i>
+					</li>
 				</ul>
 				<pre style="border:3px solid black;padding:10px;" class="fragment" data-fragment-index="2">
 var CommentBox = React.createClass({
@@ -2169,7 +2170,8 @@ var Panel = React.createClass({
 						while the parent-child relationship is simply the one you know and love from the DOM</li>
 					<ul>
 						<li style="font-size:0.8em;" class="fragment" data-fragment-index="3">Panel owns
-							<b>the div, Badge and Image</b> instances</li>
+							<b>the div, Badge and Image</b> instances
+						</li>
 						<li style="font-size:0.8em;" class="fragment" data-fragment-index="4">&lt;div> is
 							the <b>parent</b> (<i>but not owner</i>) of the Badge and Image instances.</li>
 					</ul>
@@ -2270,7 +2272,8 @@ render() {
 						component passed to it.
 						<ul>
 							<li class="fragment" data-fragment-index="4" style="font-size:0.8em;">
-								<b>cloneWithProps()</b>makes this possible.</li>
+								<b>cloneWithProps()</b>makes this possible.
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -2299,7 +2302,8 @@ var clonedcomponent = cloneWithProps(
 				<span id="title1">Controlled Component</span><br>
 				<ul>
 					<li class="fragment" data-fragment-index="1">An &lt;input> with value property is an
-						<i>controlled</i> component</li>
+						<i>controlled</i> component
+					</li>
 				</ul>
 				<pre style="border:3px solid black;padding:10px;" class="fragment" data-fragment-index="2">
 getInitialState: function() {
@@ -2324,7 +2328,8 @@ getInitialState: function() {
 				<span id="title1">Uncontrolled Component</span><br>
 				<ul>
 					<li class="fragment" data-fragment-index="1">An &lt;input> without value property is an
-						<i>uncontrolled</i> component</li>
+						<i>uncontrolled</i> component
+					</li>
 				</ul>
 				<pre style="border:3px solid black;padding:10px;" class="fragment" data-fragment-index="2">
 render: function() {
@@ -2872,9 +2877,11 @@ return {
 			<section>
 				<span id="title1">ES6 Modules</span><br><br>
 				<aside style="float:left;font-size:0.7em;margin-left:20px;" class="fragment" data-fragment-index="3">
-					<u>There can be multiple named exports:</u></aside>
+					<u>There can be multiple named exports:</u>
+				</aside>
 				<aside style="float:left;font-size:0.7em;margin-left:80px;" class="fragment" data-fragment-index="4">
-					<u>Import the complete module:</u></aside>
+					<u>Import the complete module:</u>
+				</aside>
 				<pre style="border: 3px solid black; padding:10px; margin-top:5px;float:left;width:490px;"
 					class="fragment" data-fragment-index="3">
 //------ lib.js ------
@@ -3236,6 +3243,52 @@ render() {
 					<li class="fragment" data-fragment-index="3">How your application logic will behave when those
 						changes occur</li>
 				</ul>
+				<img src="images/reactjs/getting-started-with-redux.png" alt="" class="fragment"
+					data-fragment-index="4">
+			</section>
+			<section class="stack">
+				<section>
+					<span id="title1">React Key Concepts</span>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">Store:<p>A store is a state container which holds
+								the
+								application’s state. Redux can have only a single store in your application. Whenever a
+								store is
+								created in Redux, you need to specify the reducer. </p>
+						</li>
+						<li class="fragment" data-fragment-index="2">Reducers:<p>The Reducer function in the redux helps
+								us
+								to return the new app state by taking the previous app state and type of action.</p>
+						</li>
+						<p class="fragment" data-fragment-index="3">The following few things should never be performed
+							inside the reducer −</p>
+
+						<ol class="fragment" data-fragment-index="4">
+							<li>Mutation of functions arguments</li>
+							<li>API calls & routing logic</li>
+							<li>Calling non-pure function e.g. Math.random()</li>
+						</ol>
+
+						<li class="fragment" data-fragment-index="5">Container:<p>The container is the function (usually
+								in
+								a separate
+								file) which gives the component props the special ability to interact with state.</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">Actions:<p>Actions are the only source of
+								information for the store. Actions have a type field that
+								tells what kind of action to perform and all other fields contain information or data.
+							</p>
+						</li>
+						<li class="fragment" data-fragment-index="2">Providers:<p>
+								The Provide component makes the Redux store available to any nested components that
+								need to access the Redux store.</p>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section>
 				<span id="title1">When Should I Use Redux?</span>
@@ -3276,35 +3329,162 @@ render() {
 				</section>
 
 				<section>
-				
+					<ul style="font-size:0.7em;">
+						<li>Store</li>
 						<ul style="font-size:0.7em;">
-							<li>Store</li>
-							<ul style="font-size:0.7em;">
-								<li class="fragment" data-fragment-index="1">One single store for entire application
-								</li>
-								<li class="fragment" data-fragment-index="2">Store are created using createStore method
-									syntax: redux.createStore(reducer)</li>
-							</ul>
+							<li class="fragment" data-fragment-index="1">One single store for entire application
+							</li>
+							<li class="fragment" data-fragment-index="2">Store are created using createStore method
+								syntax: redux.createStore(reducer)</li>
 						</ul>
+					</ul>
+					<ul style="font-size:0.7em;">
+						<li>Reducers</li>
 						<ul style="font-size:0.7em;">
-							<li>Reducers</li>
-							<ul style="font-size:0.7em;">
-								<li class="fragment" data-fragment-index="1">Modify the state depending on action</li>
-								<li class="fragment" data-fragment-index="2">Don't directly modify the state</li>
-								<li class="fragment" data-fragment-index="2">No side effects (http calls not allowed)</li>
-							</ul>
+							<li class="fragment" data-fragment-index="1">Modify the state depending on action</li>
+							<li class="fragment" data-fragment-index="2">Don't directly modify the state</li>
+							<li class="fragment" data-fragment-index="2">No side effects (http calls not allowed)</li>
 						</ul>
+					</ul>
+					<ul style="font-size:0.7em;">
+						<li>Dispatch</li>
 						<ul style="font-size:0.7em;">
-							<li>Dispatch</li>
-							<ul style="font-size:0.7em;">
-								<li class="fragment" data-fragment-index="1">Dispatches actions to store, reaches reducer then </li>
-								<li class="fragment" data-fragment-index="2">The only way to update the state is to call store.dispatch() and pass in an action object.</li>
-							</ul>
+							<li class="fragment" data-fragment-index="1">Dispatches actions to store, reaches reducer
+								then </li>
+							<li class="fragment" data-fragment-index="2">The only way to update the state is to call
+								store.dispatch() and pass in an action object.</li>
 						</ul>
+					</ul>
 				</section>
 
 			</section>
+			<section class="stack">
+				<section>
+					<div class="sl-block" data-block-type="text"
+						style="width: 800px; left: 80px; top: 270px; height: auto;"
+						data-block-id="393ab858670bba12390fe748f69cefc4">
+						<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+							<h2>Redux MiddleWare</h2>
+						</div>
+					</div>
+				</section>
+				<section>
+					<span id="title1">Middleware</span>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">Enhancers are powerful because they can override or
+							replace any of the store's methods: <strong>dispatch</strong>, <strong>getState</strong>,
+							and <strong>subscribe.</strong></li>
+						<li class="fragment" data-fragment-index="2">But, much of the time, we only need to customize
+							how
+							<strong>dispatch</strong> behaves. It would be nice if there was a way to add some
+							customized behavior when <strong>dispatch</strong> runs.
+						</li>
+						<li class="fragment" data-fragment-index="3">Redux uses a special kind of addon called
+							<strong>middleware</strong> to let us customize the <strong>dispatch</strong> function.
+						</li>
+					</ul>
+					<img src="images/reactjs/redux_middleware.png" alt="" class="fragment" data-fragment-index="4">
 
+				</section>
+				<section>
+					<span id="title1"> Implementing Middleware</span>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">Redux middleware are actually implemented on top of
+							a very special store enhancer that comes built in with Redux, called
+							<strong>applyMiddleware.</strong>
+						</li>
+						<li class="fragment" data-fragment-index="2">We'll start with applyMiddleware by itself, and
+							we'll add three example middleware
+						</li>
+					</ul>
+					<img src="images/reactjs/middleware1.jpg " alt="" class="fragment" data-fragment-index="3"
+						style="height:300px;">
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="4">Unlike a reducer,<strong>
+								middleware can have side effects inside</strong>, including timeouts
+							and other async logic.</li>
+					</ul>
+				</section>
+				<section>
+					<span id="title1"> Writing Custom Middleware</span>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">We can write our own middleware. You might not
+							need to do this all the time, but custom middleware are a great way to add specific
+							behaviors to a Redux application.</li>
+						<li class="fragment" data-fragment-index="2"><strong>Redux middleware are written as a series of
+								three nested functions</strong></li>
+					</ul>
+					<img src="images/reactjs/customMiddleWare.jpg " alt="" class="fragment" data-fragment-index="3"
+						style="height:300px;width: 800px;">
+				</section>
+				<section>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">Because these are normal functions, we can also
+							write them using ES6 arrow functions. This lets us write them shorter because arrow
+							functions don't have to have a return statement, but it can also be a bit harder to read if
+							you're not yet familiar with arrow functions and implicit returns.
+							<br><br>
+							<p class="fragment" data-fragment-index="2">Here's the same example as above, using arrow
+								functions:</p>
+						</li>
+
+					</ul>
+					<img src="images/reactjs/customMiddleWarefunc.jpg " alt="" class="fragment" data-fragment-index="3">
+				</section>
+			</section>
+			<section class="stack">
+				<section>
+					<div class="sl-block" data-block-type="text"
+						style="width: 800px; left: 80px; top: 270px; height: auto;"
+						data-block-id="393ab858670bba12390fe748f69cefc4">
+						<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+							<h2>Redux Thunk</h2>
+						</div>
+					</div>
+				</section>
+				<section>
+					<span id="title1"> Thunk Middleware</span>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">
+							Redux already has an official version of that "async function middleware",
+							called the <strong>Redux "Thunk" middleware</strong>. The thunk middleware allows us to
+							write functions that
+							get <strong>dispatch</strong> and <strong>getState</strong> as arguments. The thunk
+							functions can have any async logic we want
+							inside, and that logic can dispatch actions and read the store state as needed.<br><br>
+							<p class="fragment" data-fragment-index="2"><strong>Writing async logic as thunk functions
+									allows us to reuse that logic without
+									knowing what Redux store we're using ahead of time.</strong></p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<span id="title1"> Configuring the Store</span>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">
+							The Redux thunk middleware is available on NPM as a package called
+							<strong>redux-thunk</strong>. We need to
+							install that package to use it in our app:
+						</li>
+					</ul>
+					<img src="images/reactjs/thunkInstall.jpg " alt="" class="fragment" data-fragment-index="2">
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="3">Once it's installed, we can update the Redux store
+						</li>
+					</ul>
+					<img src="images/reactjs/composeThunk.jpg " alt="" class="fragment" data-fragment-index="4">
+
+				</section>
+				<section>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">Or if you want to add a design component in our
+							React application, we can use Redux Thunk to set up middleware. To do this, we have modified
+							the above code by including the HTML and CSS components as shown
+						</li>
+					</ul>
+					<img src="images/reactjs/createStore.jpg " alt="" class="fragment" data-fragment-index="2">
+				</section>
+			</section>
 			<section>
 				<span id="title1">Best Practices</span>
 				<ol>
