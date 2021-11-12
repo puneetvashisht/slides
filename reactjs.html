@@ -1649,6 +1649,46 @@ export default class Badge extends Component {
 						style="width: 800px; left: 80px; top: 270px; height: auto;"
 						data-block-id="29dd53138a250b72a8c3cae35e3445f8">
 						<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+							<h2>PropTypes</h2>
+						</div>
+					</div>
+				</section>
+				<section>
+					<span id="title1">PropTypes</span>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Runtime type checking for React props and similar
+							objects.</li>
+						<li class="fragment" data-fragment-index="2">You can use prop-types to document the intended
+							types of properties passed to components. React (and potentially other libraries—see the
+							checkPropTypes() reference below) will check props passed to your components against those
+							definitions, and warn in development if they don’t match.</li>
+						<li class="fragment" data-fragment-index="3"><strong>Installation</strong></li>
+						<ul>
+							<li style="font-size:0.8em;" class="fragment" data-fragment-index="4">npm install --save
+								prop-types</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li class="fragment" data-fragment-index="1"><strong>Importing</strong></li>
+						<ul>
+							<li style="font-size:0.8em;" class="fragment" data-fragment-index="2">import PropTypes from
+								'prop-types'; </br>
+								var PropTypes = require('prop-types');</li>
+						</ul>
+						<li class="fragment" data-fragment-index="3"><strong>We can create proptypes like this:</strong>
+						</li>
+						<img src="images/reactjs/propTypes.jpg" alt="" class="fragment" data-fragment-index="4">
+					</ul>
+				</section>
+			</section>
+			<section class="stack">
+				<section>
+					<div class="sl-block" data-block-type="text"
+						style="width: 800px; left: 80px; top: 270px; height: auto;"
+						data-block-id="29dd53138a250b72a8c3cae35e3445f8">
+						<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
 							<h2>State</h2>
 						</div>
 					</div>
@@ -3484,6 +3524,92 @@ render() {
 					</ul>
 					<img src="images/reactjs/createStore.jpg " alt="" class="fragment" data-fragment-index="2">
 				</section>
+			</section>
+			<section class="stack">
+				<section>
+					<div class="sl-block" data-block-type="text"
+						style="width: 800px; left: 80px; top: 270px; height: auto;"
+						data-block-id="393ab858670bba12390fe748f69cefc4">
+						<div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+							<h2>RxJS</h2>
+						</div>
+					</div>
+				</section>
+				<section>
+					<span id="title1"> RxJS</span>
+					<ul style="font-size:0.7em;">
+						<li class="fragment" data-fragment-index="1">
+							RxJS is a JavaScript library that uses observables to work with reactive programming that
+							deals with asynchronous data calls, callbacks and event-based programs.
+						</li>
+						<li class="fragment" data-fragment-index="2">
+							<strong>Features of RxJS:</strong>
+							<ul style="font-size:0.7em;">
+								<li class="fragment" data-fragment-index="3">
+									<p><strong> Observable :</strong>An observable is a function that creates an
+										observer and attaches it to the source
+										where values are expected, for example, clicks, mouse events from a dom element
+										or
+										an Http request, etc.</p>
+
+								</li>
+								<li class="fragment" data-fragment-index="4">
+									<p><strong> Observer :</strong>It is an object with next(), error() and complete()
+										methods, that will get called
+										when there is interaction to the with the observable i.e. the source interacts
+										for
+										an example button click, Http request, etc.</p>
+
+								</li>
+								<li class="fragment" data-fragment-index="5">
+									<p><strong> Subscription :</strong> A subject is an observable that can multicast
+										i.e. talk to many observers. Consider
+										a button with an event listener, the function attached to the event using
+										addlistener is called every time the user clicks on the button similar
+										functionality
+										goes for subject too.</p>
+
+								</li>
+								<li class="fragment" data-fragment-index="6">
+									<p><strong> Operators :</strong><span></span> An operator is a pure function that
+										takes
+										in observable as input and the output is
+										also an observable.</p>
+
+								</li>
+
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li class="fragment" data-fragment-index="2">
+							<strong>Features of RxJS:</strong>
+							<ul>
+								<li class="fragment" data-fragment-index="1">
+									<p><strong> Subject :</strong>A subject is an observable that can multicast i.e.
+										talk to
+										many observers. Consider a button
+										with an event listener, the function attached to the event using addlistener is
+										called
+										every
+										time the user clicks on the button similar functionality goes for subject too.
+									</p>
+
+								</li>
+								<li class="fragment" data-fragment-index="2">
+									<p><strong> Schedulers :</strong>A scheduler controls the execution of when the
+										subscription
+										has to start and
+										notified.</p>
+
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
 			</section>
 			<section>
 				<span id="title1">Best Practices</span>
